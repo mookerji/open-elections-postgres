@@ -1,0 +1,144 @@
+[submodule "third_party/sources/openelections-data-ak"]
+	path = third_party/sources/openelections-data-ak
+	url = git://github.com/openelections/openelections-data-ak.git
+[submodule "third_party/sources/openelections-data-al"]
+	path = third_party/sources/openelections-data-al
+	url = git://github.com/openelections/openelections-data-al.git
+[submodule "third_party/sources/openelections-data-ar"]
+	path = third_party/sources/openelections-data-ar
+	url = git://github.com/openelections/openelections-data-ar.git
+[submodule "third_party/sources/openelections-data-az"]
+	path = third_party/sources/openelections-data-az
+	url = git://github.com/openelections/openelections-data-az.git
+[submodule "third_party/sources/openelections-data-ca"]
+	path = third_party/sources/openelections-data-ca
+	url = git://github.com/openelections/openelections-data-ca.git
+[submodule "third_party/sources/openelections-data-co"]
+	path = third_party/sources/openelections-data-co
+	url = git://github.com/openelections/openelections-data-co.git
+[submodule "third_party/sources/openelections-data-ct"]
+	path = third_party/sources/openelections-data-ct
+	url = git://github.com/openelections/openelections-data-ct.git
+[submodule "third_party/sources/openelections-data-dc"]
+	path = third_party/sources/openelections-data-dc
+	url = git://github.com/openelections/openelections-data-dc.git
+[submodule "third_party/sources/openelections-data-de"]
+	path = third_party/sources/openelections-data-de
+	url = git://github.com/openelections/openelections-data-de.git
+[submodule "third_party/sources/openelections-data-ga"]
+	path = third_party/sources/openelections-data-ga
+	url = git://github.com/openelections/openelections-data-ga.git
+[submodule "third_party/sources/openelections-data-ia"]
+	path = third_party/sources/openelections-data-ia
+	url = git://github.com/openelections/openelections-data-ia.git
+[submodule "third_party/sources/openelections-data-id"]
+	path = third_party/sources/openelections-data-id
+	url = git://github.com/openelections/openelections-data-id.git
+[submodule "third_party/sources/openelections-data-il"]
+	path = third_party/sources/openelections-data-il
+	url = git://github.com/openelections/openelections-data-il.git
+[submodule "third_party/sources/openelections-data-in"]
+	path = third_party/sources/openelections-data-in
+	url = git://github.com/openelections/openelections-data-in.git
+[submodule "third_party/sources/openelections-data-ks"]
+	path = third_party/sources/openelections-data-ks
+	url = git://github.com/openelections/openelections-data-ks.git
+[submodule "third_party/sources/openelections-data-ky"]
+	path = third_party/sources/openelections-data-ky
+	url = git://github.com/openelections/openelections-data-ky.git
+[submodule "third_party/sources/openelections-data-la"]
+	path = third_party/sources/openelections-data-la
+	url = git://github.com/openelections/openelections-data-la.git
+[submodule "third_party/sources/openelections-data-ma"]
+	path = third_party/sources/openelections-data-ma
+	url = git://github.com/openelections/openelections-data-ma.git
+[submodule "third_party/sources/openelections-data-me"]
+	path = third_party/sources/openelections-data-me
+	url = git://github.com/openelections/openelections-data-me.git
+[submodule "third_party/sources/openelections-data-mi"]
+	path = third_party/sources/openelections-data-mi
+	url = git://github.com/openelections/openelections-data-mi.git
+[submodule "third_party/sources/openelections-data-mn"]
+	path = third_party/sources/openelections-data-mn
+	url = git://github.com/openelections/openelections-data-mn.git
+[submodule "third_party/sources/openelections-data-mo"]
+	path = third_party/sources/openelections-data-mo
+	url = git://github.com/openelections/openelections-data-mo.git
+[submodule "third_party/sources/openelections-data-ms"]
+	path = third_party/sources/openelections-data-ms
+	url = git://github.com/openelections/openelections-data-ms.git
+[submodule "third_party/sources/openelections-data-mt"]
+	path = third_party/sources/openelections-data-mt
+	url = git://github.com/openelections/openelections-data-mt.git
+[submodule "third_party/sources/openelections-data-nc"]
+	path = third_party/sources/openelections-data-nc
+	url = git://github.com/openelections/openelections-data-nc.git
+[submodule "third_party/sources/openelections-data-nd"]
+	path = third_party/sources/openelections-data-nd
+	url = git://github.com/openelections/openelections-data-nd.git
+[submodule "third_party/sources/openelections-data-ne"]
+	path = third_party/sources/openelections-data-ne
+	url = git://github.com/openelections/openelections-data-ne.git
+[submodule "third_party/sources/openelections-data-nh"]
+	path = third_party/sources/openelections-data-nh
+	url = git://github.com/openelections/openelections-data-nh.git
+[submodule "third_party/sources/openelections-data-nj"]
+	path = third_party/sources/openelections-data-nj
+	url = git://github.com/openelections/openelections-data-nj.git
+[submodule "third_party/sources/openelections-data-nm"]
+	path = third_party/sources/openelections-data-nm
+	url = git://github.com/openelections/openelections-data-nm.git
+[submodule "third_party/sources/openelections-data-nv"]
+	path = third_party/sources/openelections-data-nv
+	url = git://github.com/openelections/openelections-data-nv.git
+[submodule "third_party/sources/openelections-data-ny"]
+	path = third_party/sources/openelections-data-ny
+	url = git://github.com/openelections/openelections-data-ny.git
+[submodule "third_party/sources/openelections-data-oh"]
+	path = third_party/sources/openelections-data-oh
+	url = git://github.com/openelections/openelections-data-oh.git
+[submodule "third_party/sources/openelections-data-ok"]
+	path = third_party/sources/openelections-data-ok
+	url = git://github.com/openelections/openelections-data-ok.git
+[submodule "third_party/sources/openelections-data-or"]
+	path = third_party/sources/openelections-data-or
+	url = git://github.com/openelections/openelections-data-or.git
+[submodule "third_party/sources/openelections-data-pa"]
+	path = third_party/sources/openelections-data-pa
+	url = git://github.com/openelections/openelections-data-pa.git
+[submodule "third_party/sources/openelections-data-ri"]
+	path = third_party/sources/openelections-data-ri
+	url = git://github.com/openelections/openelections-data-ri.git
+[submodule "third_party/sources/openelections-data-sc"]
+	path = third_party/sources/openelections-data-sc
+	url = git://github.com/openelections/openelections-data-sc.git
+[submodule "third_party/sources/openelections-data-sd"]
+	path = third_party/sources/openelections-data-sd
+	url = git://github.com/openelections/openelections-data-sd.git
+[submodule "third_party/sources/openelections-data-tn"]
+	path = third_party/sources/openelections-data-tn
+	url = git://github.com/openelections/openelections-data-tn.git
+[submodule "third_party/sources/openelections-data-tx"]
+	path = third_party/sources/openelections-data-tx
+	url = git://github.com/openelections/openelections-data-tx.git
+[submodule "third_party/sources/openelections-data-ut"]
+	path = third_party/sources/openelections-data-ut
+	url = git://github.com/openelections/openelections-data-ut.git
+[submodule "third_party/sources/openelections-data-va"]
+	path = third_party/sources/openelections-data-va
+	url = git://github.com/openelections/openelections-data-va.git
+[submodule "third_party/sources/openelections-data-vt"]
+	path = third_party/sources/openelections-data-vt
+	url = git://github.com/openelections/openelections-data-vt.git
+[submodule "third_party/sources/openelections-data-wa"]
+	path = third_party/sources/openelections-data-wa
+	url = git://github.com/openelections/openelections-data-wa.git
+[submodule "third_party/sources/openelections-data-wi"]
+	path = third_party/sources/openelections-data-wi
+	url = git://github.com/openelections/openelections-data-wi.git
+[submodule "third_party/sources/openelections-data-wv"]
+	path = third_party/sources/openelections-data-wv
+	url = git://github.com/openelections/openelections-data-wv.git
+[submodule "third_party/sources/openelections-data-wy"]
+	path = third_party/sources/openelections-data-wy
+	url = git://github.com/openelections/openelections-data-wy.git
