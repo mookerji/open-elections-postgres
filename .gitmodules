@@ -1,144 +1,192 @@
 [submodule "third_party/sources/openelections-data-ak"]
 	path = third_party/sources/openelections-data-ak
 	url = git://github.com/openelections/openelections-data-ak.git
+	ignore = dirty
 [submodule "third_party/sources/openelections-data-al"]
 	path = third_party/sources/openelections-data-al
 	url = git://github.com/openelections/openelections-data-al.git
+	ignore = dirty
 [submodule "third_party/sources/openelections-data-ar"]
 	path = third_party/sources/openelections-data-ar
 	url = git://github.com/openelections/openelections-data-ar.git
+	ignore = dirty
 [submodule "third_party/sources/openelections-data-az"]
 	path = third_party/sources/openelections-data-az
 	url = git://github.com/openelections/openelections-data-az.git
+	ignore = dirty
 [submodule "third_party/sources/openelections-data-ca"]
 	path = third_party/sources/openelections-data-ca
 	url = git://github.com/openelections/openelections-data-ca.git
+	ignore = dirty
 [submodule "third_party/sources/openelections-data-co"]
 	path = third_party/sources/openelections-data-co
 	url = git://github.com/openelections/openelections-data-co.git
+	ignore = dirty
 [submodule "third_party/sources/openelections-data-ct"]
 	path = third_party/sources/openelections-data-ct
 	url = git://github.com/openelections/openelections-data-ct.git
+	ignore = dirty
 [submodule "third_party/sources/openelections-data-dc"]
 	path = third_party/sources/openelections-data-dc
 	url = git://github.com/openelections/openelections-data-dc.git
+	ignore = dirty
 [submodule "third_party/sources/openelections-data-de"]
 	path = third_party/sources/openelections-data-de
 	url = git://github.com/openelections/openelections-data-de.git
+	ignore = dirty
 [submodule "third_party/sources/openelections-data-ga"]
 	path = third_party/sources/openelections-data-ga
 	url = git://github.com/openelections/openelections-data-ga.git
+	ignore = dirty
 [submodule "third_party/sources/openelections-data-ia"]
 	path = third_party/sources/openelections-data-ia
 	url = git://github.com/openelections/openelections-data-ia.git
+	ignore = dirty
 [submodule "third_party/sources/openelections-data-id"]
 	path = third_party/sources/openelections-data-id
 	url = git://github.com/openelections/openelections-data-id.git
+	ignore = dirty
 [submodule "third_party/sources/openelections-data-il"]
 	path = third_party/sources/openelections-data-il
 	url = git://github.com/openelections/openelections-data-il.git
+	ignore = dirty
 [submodule "third_party/sources/openelections-data-in"]
 	path = third_party/sources/openelections-data-in
 	url = git://github.com/openelections/openelections-data-in.git
+	ignore = dirty
 [submodule "third_party/sources/openelections-data-ks"]
 	path = third_party/sources/openelections-data-ks
 	url = git://github.com/openelections/openelections-data-ks.git
+	ignore = dirty
 [submodule "third_party/sources/openelections-data-ky"]
 	path = third_party/sources/openelections-data-ky
 	url = git://github.com/openelections/openelections-data-ky.git
+	ignore = dirty
 [submodule "third_party/sources/openelections-data-la"]
 	path = third_party/sources/openelections-data-la
 	url = git://github.com/openelections/openelections-data-la.git
+	ignore = dirty
 [submodule "third_party/sources/openelections-data-ma"]
 	path = third_party/sources/openelections-data-ma
 	url = git://github.com/openelections/openelections-data-ma.git
+	ignore = dirty
 [submodule "third_party/sources/openelections-data-me"]
 	path = third_party/sources/openelections-data-me
 	url = git://github.com/openelections/openelections-data-me.git
+	ignore = dirty
 [submodule "third_party/sources/openelections-data-mi"]
 	path = third_party/sources/openelections-data-mi
 	url = git://github.com/openelections/openelections-data-mi.git
+	ignore = dirty
 [submodule "third_party/sources/openelections-data-mn"]
 	path = third_party/sources/openelections-data-mn
 	url = git://github.com/openelections/openelections-data-mn.git
+	ignore = dirty
 [submodule "third_party/sources/openelections-data-mo"]
 	path = third_party/sources/openelections-data-mo
 	url = git://github.com/openelections/openelections-data-mo.git
+	ignore = dirty
 [submodule "third_party/sources/openelections-data-ms"]
 	path = third_party/sources/openelections-data-ms
 	url = git://github.com/openelections/openelections-data-ms.git
+	ignore = dirty
 [submodule "third_party/sources/openelections-data-mt"]
 	path = third_party/sources/openelections-data-mt
 	url = git://github.com/openelections/openelections-data-mt.git
+	ignore = dirty
 [submodule "third_party/sources/openelections-data-nc"]
 	path = third_party/sources/openelections-data-nc
 	url = git://github.com/openelections/openelections-data-nc.git
+	ignore = dirty
 [submodule "third_party/sources/openelections-data-nd"]
 	path = third_party/sources/openelections-data-nd
 	url = git://github.com/openelections/openelections-data-nd.git
+	ignore = dirty
 [submodule "third_party/sources/openelections-data-ne"]
 	path = third_party/sources/openelections-data-ne
 	url = git://github.com/openelections/openelections-data-ne.git
+	ignore = dirty
 [submodule "third_party/sources/openelections-data-nh"]
 	path = third_party/sources/openelections-data-nh
 	url = git://github.com/openelections/openelections-data-nh.git
+	ignore = dirty
 [submodule "third_party/sources/openelections-data-nj"]
 	path = third_party/sources/openelections-data-nj
 	url = git://github.com/openelections/openelections-data-nj.git
+	ignore = dirty
 [submodule "third_party/sources/openelections-data-nm"]
 	path = third_party/sources/openelections-data-nm
 	url = git://github.com/openelections/openelections-data-nm.git
+	ignore = dirty
 [submodule "third_party/sources/openelections-data-nv"]
 	path = third_party/sources/openelections-data-nv
 	url = git://github.com/openelections/openelections-data-nv.git
+	ignore = dirty
 [submodule "third_party/sources/openelections-data-ny"]
 	path = third_party/sources/openelections-data-ny
 	url = git://github.com/openelections/openelections-data-ny.git
+	ignore = dirty
 [submodule "third_party/sources/openelections-data-oh"]
 	path = third_party/sources/openelections-data-oh
 	url = git://github.com/openelections/openelections-data-oh.git
+	ignore = dirty
 [submodule "third_party/sources/openelections-data-ok"]
 	path = third_party/sources/openelections-data-ok
 	url = git://github.com/openelections/openelections-data-ok.git
+	ignore = dirty
 [submodule "third_party/sources/openelections-data-or"]
 	path = third_party/sources/openelections-data-or
 	url = git://github.com/openelections/openelections-data-or.git
+	ignore = dirty
 [submodule "third_party/sources/openelections-data-pa"]
 	path = third_party/sources/openelections-data-pa
 	url = git://github.com/openelections/openelections-data-pa.git
+	ignore = dirty
 [submodule "third_party/sources/openelections-data-ri"]
 	path = third_party/sources/openelections-data-ri
 	url = git://github.com/openelections/openelections-data-ri.git
+	ignore = dirty
 [submodule "third_party/sources/openelections-data-sc"]
 	path = third_party/sources/openelections-data-sc
 	url = git://github.com/openelections/openelections-data-sc.git
+	ignore = dirty
 [submodule "third_party/sources/openelections-data-sd"]
 	path = third_party/sources/openelections-data-sd
 	url = git://github.com/openelections/openelections-data-sd.git
+	ignore = dirty
 [submodule "third_party/sources/openelections-data-tn"]
 	path = third_party/sources/openelections-data-tn
 	url = git://github.com/openelections/openelections-data-tn.git
+	ignore = dirty
 [submodule "third_party/sources/openelections-data-tx"]
 	path = third_party/sources/openelections-data-tx
 	url = git://github.com/openelections/openelections-data-tx.git
+	ignore = dirty
 [submodule "third_party/sources/openelections-data-ut"]
 	path = third_party/sources/openelections-data-ut
 	url = git://github.com/openelections/openelections-data-ut.git
+	ignore = dirty
 [submodule "third_party/sources/openelections-data-va"]
 	path = third_party/sources/openelections-data-va
 	url = git://github.com/openelections/openelections-data-va.git
+	ignore = dirty
 [submodule "third_party/sources/openelections-data-vt"]
 	path = third_party/sources/openelections-data-vt
 	url = git://github.com/openelections/openelections-data-vt.git
+	ignore = dirty
 [submodule "third_party/sources/openelections-data-wa"]
 	path = third_party/sources/openelections-data-wa
 	url = git://github.com/openelections/openelections-data-wa.git
+	ignore = dirty
 [submodule "third_party/sources/openelections-data-wi"]
 	path = third_party/sources/openelections-data-wi
 	url = git://github.com/openelections/openelections-data-wi.git
+	ignore = dirty
 [submodule "third_party/sources/openelections-data-wv"]
 	path = third_party/sources/openelections-data-wv
 	url = git://github.com/openelections/openelections-data-wv.git
+	ignore = dirty
 [submodule "third_party/sources/openelections-data-wy"]
 	path = third_party/sources/openelections-data-wy
 	url = git://github.com/openelections/openelections-data-wy.git
+	ignore = dirty
