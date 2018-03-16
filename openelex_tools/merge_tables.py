@@ -85,6 +85,19 @@ def is_ok(dataset):
     return REQUIRED_COLUMNS.issubset(set(dataset.src_columns))
 
 
+def write_metadata(config, datasets):
+    with open(config.output_metadata_file, 'w+') as f:
+        logging.debug('Writing to %s.' % config.output_metadata_file)
+        metadata = [dict(dat._asdict()) for dat in datasets]
+        f.write(yaml.safe_dump({'states': metadata}))
+
+
+def write_result(config, datasets):
+    logging.debug('Writing to %s.' % config.output_csv_file)
+    df = pd.concat([dataset.data for dataset in datasets if is_ok(dataset)])
+    df.to_csv(config.output_csv_file)
+
+
 @click.command()
 @click.option('--source_directory')
 @click.option('--filter_string', default='general__precinct')
@@ -105,14 +118,9 @@ def main(source_directory, filter_string, output_metadata_file, skip_load,
             logging.error('Ignoring: %s' % dataset.filename)
     # Output some metadata about each dataset
     if config.output_metadata_file:
-        with open(config.output_metadata_file, 'w+') as f:
-            logging.debug('Writing to %s.' % config.output_metadata_file)
-            metadata = [dict(dat._asdict()) for dat in datasets]
-            f.write(yaml.safe_dump({'states': metadata}))
+        write_metadata(config, datasets)
     if config.output_csv_file:
-        logging.debug('Writing to %s.' % output_csv_file)
-        df = pd.concat([dataset.data for dataset in datasets if is_ok(dataset)])
-        df.to_csv(config.output_csv_file)
+        write_result(config, datasets)
 
 
 if __name__ == '__main__':
