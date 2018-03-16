@@ -54,9 +54,14 @@ def line_to_dataset(filename):
     )
 
 
+def canonicalize_party(dataset):
+    pass
+
+
 def load_frame_for_dataset(dataset, skip_load):
     df = pd.read_csv(dataset.filename, infer_datetime_format=True)
     logging.debug('Loading %s with shape: %s' % (dataset.filename, df.shape))
+    dataset.src_columns = df.columns.tolist()
     df = df[list(REQUIRED_COLUMNS)]
     df['year'] = dataset.year
     df['date'] = dataset.date
@@ -65,14 +70,6 @@ def load_frame_for_dataset(dataset, skip_load):
         df['votes'] = pd.to_numeric(df['votes'].str.replace('"', ''))
     for col in ['party', 'office', 'candidate', 'precinct']:
         df[col] = df[col].str.lower().str.rstrip().str.lstrip()
-    df = df[~df['candidate'].isin([
-        'total', 'yes', 'no', 'approved', 'rejected', 'approved?', 'rejected?',
-        'levy yes', 'levy no', 'levy...yes', 'levy...no'
-    ])]
-    df = df[~pd.isnull(df.office)]
-    office_regex = r'president|senate|house|senator|united states|u\.s\.'
-    df = df[df.office.str.contains(office_regex)]
-    dataset.src_columns = df.columns.tolist()
     if not skip_load:
         dataset.data = df
 
@@ -109,7 +106,7 @@ def write_metadata(config, datasets):
 def write_result(config, datasets):
     logging.debug('Writing to %s.' % config.output_csv_file)
     df = pd.concat([dataset.data for dataset in datasets if is_ok(dataset)])
-    df.to_csv(config.output_csv_file)
+    df.to_csv(config.output_csv_file, index=False)
 
 
 @click.command()
