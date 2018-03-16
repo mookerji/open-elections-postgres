@@ -2,7 +2,6 @@ from dateutil.parser import parse as dateparse
 from parse import parse
 from recordclass import recordclass
 
-
 import logging
 import os
 import yaml
@@ -12,11 +11,21 @@ import pandas as pd
 
 logging.basicConfig(level=os.environ.get('LOG_LEVEL', 'INFO'))
 
+REQUIRED_COLUMNS = set([
+    'precinct',
+    'office',
+    'district',
+    'party',
+    'candidate',
+    'votes',
+])
+
 Configuration = recordclass('Configuration', [
     'source_directory',
     'filter_string',
-    'output',
+    'output_metadata_file',
     'skip_load',
+    'output_csv_file',
 ])
 
 Dataset = recordclass('Dataset', [
@@ -72,27 +81,38 @@ def get_files(config):
     return datasets
 
 
+def is_ok(dataset):
+    return REQUIRED_COLUMNS.issubset(set(dataset.src_columns))
+
+
 @click.command()
 @click.option('--source_directory')
 @click.option('--filter_string', default='general__precinct')
-@click.option('--output_file', default='state_results.yaml')
+@click.option('--output_metadata_file', default=None)
 @click.option('--skip_load', is_flag=True, default=False)
-def main(source_directory, filter_string, output_file, skip_load):
-    config = Configuration(source_directory, filter_string, output_file, skip_load)
+@click.option('--output_csv_file', default=None)
+def main(source_directory, filter_string, output_metadata_file, skip_load,
+         output_csv_file):
+    config = Configuration(source_directory, filter_string,
+                           output_metadata_file, skip_load, output_csv_file)
     datasets = sorted(get_files(config), key=lambda v: v.filename)
     logging.debug('Found %d datasets.' % len(datasets))
     logging.debug('Loading datasets.')
     for dataset in datasets:
         try:
             load_frame_for_dataset(dataset, config.skip_load)
-        except:
+        except Exception:
             logging.error('Ignoring: %s' % dataset.filename)
-    #
-    with open(output_file, 'w+') as f:
-        logging.debug('Writing to %s.' % output_file)
-        metadata = [dict(dat._asdict()) for dat in datasets]
-        f.write(yaml.safe_dump({'states': metadata}))
-
+    # Output some metadata about each dataset
+    if config.output_metadata_file:
+        with open(config.output_metadata_file, 'w+') as f:
+            logging.debug('Writing to %s.' % config.output_metadata_file)
+            metadata = [dict(dat._asdict()) for dat in datasets]
+            f.write(yaml.safe_dump({'states': metadata}))
+    if config.output_csv_file:
+        logging.debug('Writing to %s.' % output_csv_file)
+        df = pd.concat([dataset.data for dataset in datasets if is_ok(dataset)])
+        df.to_csv(config.output_csv_file)
 
 
 if __name__ == '__main__':
