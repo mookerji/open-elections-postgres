@@ -7,6 +7,7 @@ import os
 import yaml
 
 import click
+import numpy as np
 import pandas as pd
 
 logging.basicConfig(level=os.environ.get('LOG_LEVEL', 'INFO'))
@@ -56,8 +57,21 @@ def line_to_dataset(filename):
 def load_frame_for_dataset(dataset, skip_load):
     df = pd.read_csv(dataset.filename, infer_datetime_format=True)
     logging.debug('Loading %s with shape: %s' % (dataset.filename, df.shape))
-    df.year = dataset.year
-    df.date = dataset.date
+    df = df[list(REQUIRED_COLUMNS)]
+    df['year'] = dataset.year
+    df['date'] = dataset.date
+    df['state'] = dataset.state
+    if df['votes'].dtype == np.dtype('object'):
+        df['votes'] = pd.to_numeric(df['votes'].str.replace('"', ''))
+    for col in ['party', 'office', 'candidate', 'precinct']:
+        df[col] = df[col].str.lower().str.rstrip().str.lstrip()
+    df = df[~df['candidate'].isin([
+        'total', 'yes', 'no', 'approved', 'rejected', 'approved?', 'rejected?',
+        'levy yes', 'levy no', 'levy...yes', 'levy...no'
+    ])]
+    df = df[~pd.isnull(df.office)]
+    office_regex = r'president|senate|house|senator|united states|u\.s\.'
+    df = df[df.office.str.contains(office_regex)]
     dataset.src_columns = df.columns.tolist()
     if not skip_load:
         dataset.data = df
@@ -65,7 +79,7 @@ def load_frame_for_dataset(dataset, skip_load):
 
 def get_files(config):
     datasets = []
-    for root, dirs, files in os.walk(config.source_directory, topdown=False):
+    for root, dirs, files in os.walk(config.source_directory):
         for name in files:
             if name.endswith('csv'):
                 full_name = os.path.join(root, name)
@@ -73,7 +87,7 @@ def get_files(config):
                     try:
                         dataset = line_to_dataset(full_name)
                         datasets.append(dataset)
-                    except:
+                    except Exception:
                         logging.error('Ignoring: %s' % full_name)
                     logging.debug('Adding: %s' % full_name)
                 else:
