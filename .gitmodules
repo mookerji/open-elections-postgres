@@ -190,3 +190,75 @@
 	path = third_party/sources/openelections-data-wy
 	url = git://github.com/openelections/openelections-data-wy.git
 	ignore = dirty
+[submodule "third_party/sources/openelections-results-az"]
+	path = third_party/sources/openelections-results-az
+	url = git://github.com/openelections/openelections-results-az.git
+	ignore = dirty
+[submodule "third_party/sources/openelections-results-fl"]
+	path = third_party/sources/openelections-results-fl
+	url = git://github.com/openelections/openelections-results-fl.git
+	ignore = dirty
+[submodule "third_party/sources/openelections-results-ia"]
+	path = third_party/sources/openelections-results-ia
+	url = git://github.com/openelections/openelections-results-ia.git
+	ignore = dirty
+[submodule "third_party/sources/openelections-results-il"]
+	path = third_party/sources/openelections-results-il
+	url = git://github.com/openelections/openelections-results-il.git
+	ignore = dirty
+[submodule "third_party/sources/openelections-results-la"]
+	path = third_party/sources/openelections-results-la
+	url = git://github.com/openelections/openelections-results-la.git
+	ignore = dirty
+[submodule "third_party/sources/openelections-results-md"]
+	path = third_party/sources/openelections-results-md
+	url = git://github.com/openelections/openelections-results-md.git
+	ignore = dirty
+[submodule "third_party/sources/openelections-results-mo"]
+	path = third_party/sources/openelections-results-mo
+	url = git://github.com/openelections/openelections-results-mo.git
+	ignore = dirty
+[submodule "third_party/sources/openelections-results-ms"]
+	path = third_party/sources/openelections-results-ms
+	url = git://github.com/openelections/openelections-results-ms.git
+	ignore = dirty
+[submodule "third_party/sources/openelections-results-mt"]
+	path = third_party/sources/openelections-results-mt
+	url = git://github.com/openelections/openelections-results-mt.git
+	ignore = dirty
+[submodule "third_party/sources/openelections-results-nc"]
+	path = third_party/sources/openelections-results-nc
+	url = git://github.com/openelections/openelections-results-nc.git
+	ignore = dirty
+[submodule "third_party/sources/openelections-results-nv"]
+	path = third_party/sources/openelections-results-nv
+	url = git://github.com/openelections/openelections-results-nv.git
+	ignore = dirty
+[submodule "third_party/sources/openelections-results-or"]
+	path = third_party/sources/openelections-results-or
+	url = git://github.com/openelections/openelections-results-or.git
+	ignore = dirty
+[submodule "third_party/sources/openelections-results-pa"]
+	path = third_party/sources/openelections-results-pa
+	url = git://github.com/openelections/openelections-results-pa.git
+	ignore = dirty
+[submodule "third_party/sources/openelections-results-tx"]
+	path = third_party/sources/openelections-results-tx
+	url = git://github.com/openelections/openelections-results-tx.git
+	ignore = dirty
+[submodule "third_party/sources/openelections-results-va"]
+	path = third_party/sources/openelections-results-va
+	url = git://github.com/openelections/openelections-results-va.git
+	ignore = dirty
+[submodule "third_party/sources/openelections-results-wa"]
+	path = third_party/sources/openelections-results-wa
+	url = git://github.com/openelections/openelections-results-wa.git
+	ignore = dirty
+[submodule "third_party/sources/openelections-results-wv"]
+	path = third_party/sources/openelections-results-wv
+	url = git://github.com/openelections/openelections-results-wv.git
+	ignore = dirty
+[submodule "third_party/sources/openelections-results-wy"]
+	path = third_party/sources/openelections-results-wy
+	url = git://github.com/openelections/openelections-results-wy.git
+	ignore = dirty
