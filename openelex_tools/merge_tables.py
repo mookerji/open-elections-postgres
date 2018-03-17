@@ -40,7 +40,7 @@ Dataset = recordclass('Dataset', [
 
 
 def line_to_dataset(filename):
-    FMT = 'third_party/sources/openelections-data-{}/{}/{}__{}.csv'
+    FMT = 'third_party/sources/openelections-data-{}/raw/{}/{}__{}.csv'
     # Example:
     # third_party/sources/openelections-data-pa/2002/20021105__pa__general__precinct.csv
     parsed = parse(FMT, filename)
